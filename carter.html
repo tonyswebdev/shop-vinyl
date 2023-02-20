@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIA VINYL</title>
+    <meta name="description" content="découvrez le site de disques vinyls">
+    <script src="https://kit.fontawesome.com/488bd16219.js" defer crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+
+<body>
+
+    <div id="header">
+        <a href="index.html" aria-label="header"><img src="img/logo0802.webp" class="logo" alt="logo de la marque"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="connexion.html">Se connecter</a></li>
+                <li id="lg-bag"><a class="active" aria-label="icone" href="carter.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="#" aria-label="icone" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="carter.html" aria-label="carter"><i class="panier fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </div>
+
+    <section id="page-header" class="about-header">
+        <h2>VOTRE PANIER</h2>
+        <p>Retrouvez tous vos articles sélectionnés !</p>
+    </section>
+
+    <div id="cart" class="section-p1">
+        <table>
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Images</td>
+                    <td>Produit</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" aria-label="icone"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/booba_ouest.webp" alt="pochette de l'album Ouest Side de Booba"></td>
+                    <td>BOOBA / OUEST SIDE</td>
+                    <td>25 €</td>
+                    <td><input type="number" aria-label="number" value="1"></td>
+                    <td>25 €</td>
+                </tr>
+                <tr>
+                    <td><a href="#" aria-label="icone"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/thebeatles.webp" alt="pochette de l'album Abbey Road de The Beatles"></td>
+                    <td>THE BEATLES / ABBEY ROAD</td>
+                    <td>35 €</td>
+                    <td><input type="number" aria-label="number" value="1"></td>
+                    <td>60 €</td>
+                </tr>
+                <tr>
+                    <td><a href="#" aria-label="icone"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/amy_winehouse_back_to_black.webp" alt="pochette de l'album Back to Black de Amy Winehouse"></td>
+                    <td>AMY WINEHOUSE / BACK TO BLACK</td>
+                    <td>30 €</td>
+                    <td><input type="number" aria-label="number" value="1"></td>
+                    <td>90 €</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <section id="cart-add" class="section-p1">
+     <div id="coupon">
+            <h3>Coupon Promo</h3>
+        <div class="text-button">
+            <input type="text" placeholder="Entrez Votre Code Promo">
+            <button class="normal">Appliquer</button>
+        </div>
+     </div>
+
+     <div id="subtotal">
+        <h3>Total</h3>
+        <table>
+            <tr>
+                <td>Total Panier</td>
+                <td>€ 345</td>
+            </tr>
+            <tr>
+                <td>Frais d'envoi</td>
+                <td>Gratuit</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>€ 345</strong></td>
+            </tr>
+        </table>
+        <button class="normal">Validez Votre Panier</button>
+     </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo0802.webp" alt="image du logo">
+            <h1>Contact</h1>
+            <p><strong>Adress: </strong> 14 Boulevard Louis le Prince Ringuet</p>
+            <p><strong>Phone: </strong> 02 43 75 65 85</p>
+            <p><strong>Hours: </strong> Du lundi au mardi: 8:30 - 12:00 et 13:00 - 17:30</p>
+            <div class="follow">
+                <h1>Nous suivre</h1>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h1>À propos</h1>
+            <a href="#" aria-label="qui sommes nous">Qui sommes nous</a>
+            <a href="#" aria-label="informations">Informations</a>
+            <a href="#" aria-label="politique de confidentialité">Politique de confidentialité</a>
+            <a href="#" aria-label="Termes et conditions">Termes et Conditions</a>
+            <a href="#" aria-label="nous contacter">Nous contacter</a>
+        </div>
+
+        <div class="col">
+            <h1>Mon Compte</h1>
+            <a href="#" aria-label="s'inscrire">S'inscrire</a>
+            <a href="#" aria-label="mon panier">Mon panier</a>
+            <a href="#" aria-label="mes favoris">Mes favoris</a>
+            <a href="#" aria-label="suivre ma commande">Suivre ma commande</a>
+            <a href="#" aria-label="aide">Aide</a>
+        </div>
+
+        <div class="col install">
+            <h1>Installez notre Application</h1>
+            <p>Sur App Store ou Google Play</p>
+            <div class="row">
+                <img src="img/app.webp" alt="logo App Store">
+                <img src="img/play.webp" alt="logo Google Play">
+            </div>
+            <p>Paiements Sécurisés</p>
+            <img src="img/pay.webp" alt="Logo moyens de paiements">
+        </div>
+
+        <div class="copyright">
+            <p>© 2022, Tony WebDev - HTML CSS Ecommerce</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
